@@ -1,31 +1,303 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo__place-header {
+  background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  left: 64px;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 64px;
+  width: 730px;
+}
+.header__title-text {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+.header__subtitle{
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+}
+.header__subtitle-text {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.header__link{
+  text-decoration: none;
+  color: #2f80ed;
+}
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: 1;
+}
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+}
+.description{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.two_columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.two_columns__descrioption_main-text{
+  width: 80%;
+  min-width: 784px;
+}
+.two_columns__description_breaf{
+  width: 175px;
+}
+.two_columns__description_breaf_text{
+line-height: 1.2;
+font-size: 18px;
+font-weight: normal;
+}
+.two_columns__descrioption_main-text_paragraph{
+line-height: 30px;
+font-size: 24px;
+font-weight: normal;
+}
+.two_columns__descrioption_main-text_paragraph-top {
+  margin-bottom: 30px;
+}
+.two_columns__descrioption_main-text_paragraph-bottom {
+  margin-top: 30px;
+}
+.two_columns__descrioption_main-text_paragraph-span-accent{
+  font-weight: bold;
+}
+.digits__section-title{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.digits__section-title-text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.digits__section-subtitle{
+  display: flex;
+  justify-content: center;
+}
+.digits__section-subtitle-text{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table{
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  flex-wrap: wrap;
+  margin: 0 auto 100px;
+}
+.digits__table-cell{
+  display: inline-block;
+  width: 250px;
+  margin-top: 60px;
+}
+.digits__table-cell_heading{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.digits__table-cell_text{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.feynman{
+  background-color: #f2f2f2;
+  height: 890px;
+  position: relative;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.feynman__title {
+  margin-right: auto;
+  margin-left: auto;
+  top: 100px;
+  bottom: 70px;
+  width: 648px;
+  z-index: 2;
+  position: relative;
+}
+.feynman__title-text{
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+.feynman__subtitle{
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+}
+.feynman__subtitle-text{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: #2f80ed;
+}
+.feynman__link-text {
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+}
+.kaufman{
+  background-color: black;
+  color: #f2f2f2;
+  overflow: hidden;
+  position: relative;
+}
+.section__title_theme-dark {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.section__title_theme-dark_text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.section__subtitle_theme-dark {
+  display: flex;
+  justify-content: center;
+}
+.section__subtitle_theme-dark_text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table_theme-dark {
+  margin-bottom: 80px;
+}
+.table_cell_theme-dark {
+  display: inline-block;
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin-top: 60px; /* при таком значении получается идеальнь, как макет (в задании указано 80px)*/
+  z-index: 1;
+}
+.table_heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table_text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.kaufman-triangle{
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
+}
+.footer{
+background-color: black;
+display: flex;
+}
+
+.columns{
+  margin: 60px auto 40px;
+  min-height: 350px;
+  width: 90%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.column__content_copyright{
+  flex-basis: 711px;
+}
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
+}
+.author{
+  bottom: 18px;
+  position: absolute;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+.column__info{
+  color: #f2f2f2;
+}
+.column__content_social{
+  color: #f2f2f2;
+}
+.column__heading{
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  position: absolute;
+}
+.column_links_text {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
 }
