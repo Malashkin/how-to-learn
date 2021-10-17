@@ -293,9 +293,8 @@ display: flex;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 16px;
-  position: absolute;
 }
-.column_links_text {
+.column__links-text {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
