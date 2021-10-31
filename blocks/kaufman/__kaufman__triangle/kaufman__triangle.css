@@ -1,6 +1,10 @@
 .kaufman__triangle {
   display: flex;
+<<<<<<< HEAD
   background-image: url(../../images/kaufman-triangle.svg);
+=======
+  background-image: url(../../../images/kaufman-triangle.svg);
+>>>>>>> master
   background-size: cover;
   position: absolute;
   width: 877px;
